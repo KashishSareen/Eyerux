@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <meta name="theme-color" content="#b22234"/>
+  <title>EyeRexUs · Secure Digital Ecosystems</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { DEFAULT: '#b22234', dark: '#8b1a2a', light: '#ffe5e9' },
+            navy:  { DEFAULT: '#0b1e3a', mid: '#1f2a3f', soft: '#3b4b62' }
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            body:    ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="font-body bg-[#fcfaf8] text-navy-mid overflow-x-hidden">
+
+<!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
+<nav id="navbar" class="w-full">
+  <div class="max-w-7xl mx-auto px-5 py-3 flex items-center justify-between">
+    <!-- Logo -->
+    <a href="index.html">
+      <img src="image/eyeruxhome.jpeg" alt="EyeRexUs Logo" class="logo-img"/>
+    </a>
+    <!-- Desktop Links -->
+    <div class="hidden lg:flex items-center gap-6">
+      <a href="index.html"        class="nav-link">Home</a>
+      <a href="about.html"        class="nav-link">About</a>
+      <a href="product.html"      class="nav-link">Products</a>
+      <a href="servicespage.html" class="nav-link">Services</a>
+      <a href="Subsidiaries.html" class="nav-link">Subsidiaries</a>
+      <a href="indus.html"        class="nav-link">Industries</a>
+      <a href="carrer.html"       class="nav-link">Careers</a>
+      <a href="./nfc-card.html"       class="nav-link">NFC Card</a>
+      <a href="contact.html"      class="nav-link">Contact</a>
+      <a href="terms.html"        class="nav-link">Terms</a>
+      <a href="https://healthcare.eyerexus.com/" class="nav-btn " target="_blank">Health Care</a>
+    </div>
+    <!-- Hamburger -->
+    <button id="menuBtn" class="lg:hidden text-white text-2xl p-2 focus:outline-none" aria-label="Menu">
+      <i id="menuIcon" class="fas fa-bars"></i>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobileMenu">
+  <a href="index.html"        class="mobile-link">Home</a>
+  <a href="about.html"        class="mobile-link">About</a>
+  <a href="product.html"      class="mobile-link">Products</a>
+  <a href="servicespage.html" class="mobile-link">Services</a>
+  <a href="Subsidiaries.html" class="mobile-link">Subsidiaries</a>
+  <a href="indus.html"        class="mobile-link">Industries</a>
+  <a href="carrer.html"       class="mobile-link">Careers</a>
+  <a href="nfc-card.html"     class="mobile-link">NFC Card</a>
+  <a href="contact.html"      class="mobile-link">Contact</a>
+  <a href="terms.html"        class="mobile-link">Terms</a>
+  <a href="https://healthcare.eyerexus.com/" class="mobile-link nav-btn text-center mt-2 !text-brand ! hover:bg-white " target="_blank">Health Care</a>
+</div>
+<div id="menuOverlay"></div>
+
+<!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+<section class="hero-gradient-bg min-h-[88vh] flex items-center relative overflow-hidden">
+  <!-- decorative circles -->
+  <div class="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-brand/5 pointer-events-none"></div>
+  <div class="absolute -bottom-20 -left-20 w-[350px] h-[350px] rounded-full bg-brand/4 pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto px-5 py-20 grid lg:grid-cols-2 gap-12 items-center w-full">
+    <!-- Text -->
+    <div>
+      <div class="section-label reveal delay-1">
+        <span class="dot-accent"></span> Government-Registered MSME
+      </div>
+      <h1 class="font-display text-4xl md:text-5xl xl:text-6xl font-bold text-navy leading-tight mt-4 reveal delay-2">
+        Build <span class="gradient-text">Secure, Scalable</span> &amp; Revenue-Driven Digital Solutions
+      </h1>
+      <p class="mt-6 text-navy-soft text-lg leading-relaxed max-w-xl reveal delay-3">
+        EyeRexUs is a Government-registered MSME technology organization delivering advanced digital products and secure IT-driven solutions for ambitious businesses worldwide.
+      </p>
+      <div class="flex flex-wrap gap-4 mt-8 reveal delay-4">
+        <a href="contact.html" class="btn-brand"><span>Connect with Us</span> <i class="fas fa-arrow-right"></i></a>
+        <a href="about.html"   class="btn-outline">Learn More</a>
+      </div>
+      <!-- Stats -->
+      <div class="flex flex-wrap gap-8 mt-12 reveal delay-5">
+        <div>
+          <div class="stat-number" data-target="8" data-suffix="+">0+</div>
+          <div class="text-sm text-navy-soft mt-1">Services</div>
+        </div>
+        <div>
+          <div class="stat-number" data-target="4" data-suffix="+">0+</div>
+          <div class="text-sm text-navy-soft mt-1">Products</div>
+        </div>
+        <div>
+          <div class="stat-number" data-target="100" data-suffix="%">0%</div>
+          <div class="text-sm text-navy-soft mt-1">Secure Architecture</div>
+        </div>
+      </div>
+    </div>
+    <!-- Image -->
+    <div class="flex justify-center reveal-right delay-2">
+      <div class="hero-blob w-full max-w-md aspect-square"
+           style="background-image:url('image/eyeruxhome.jpeg'); background-size:cover; background-position:center;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ ABOUT / PHILOSOPHY ═══════════════════════════════ -->
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="text-center mb-16">
+      <div class="section-label reveal">Defined by Integrity</div>
+      <h2 class="font-display text-4xl md:text-5xl font-bold text-navy mt-3 reveal delay-1">
+        Innovation with <span class="gradient-text">Integrity</span>
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+      <!-- Mission -->
+      <div class="card-premium reveal delay-1">
+        <div class="w-14 h-14 rounded-2xl bg-brand/10 flex items-center justify-center mb-5">
+          <i class="fas fa-bullseye text-brand text-2xl"></i>
+        </div>
+        <h3 class="font-display text-xl font-semibold text-navy mb-3">Mission</h3>
+        <p class="text-navy-soft text-sm leading-relaxed">Empowering businesses in a digital-first world with ethical, scalable, and future-ready IT solutions designed to drive measurable results.</p>
+      </div>
+      <!-- Vision -->
+      <div class="card-premium reveal delay-2">
+        <div class="w-14 h-14 rounded-2xl bg-brand/10 flex items-center justify-center mb-5">
+          <i class="fas fa-binoculars text-brand text-2xl"></i>
+        </div>
+        <h3 class="font-display text-xl font-semibold text-navy mb-3">Vision</h3>
+        <p class="text-navy-soft text-sm leading-relaxed">To be a globally recognized leader in IT innovation — valued for integrity, known for delivering impactful digital solutions, and trusted for helping businesses scale with confidence.</p>
+      </div>
+      <!-- Approach -->
+      <div class="card-premium reveal delay-3">
+        <div class="w-14 h-14 rounded-2xl bg-brand/10 flex items-center justify-center mb-5">
+          <i class="fas fa-lightbulb text-brand text-2xl"></i>
+        </div>
+        <h3 class="font-display text-xl font-semibold text-navy mb-3">Approach</h3>
+        <p class="text-navy-soft text-sm leading-relaxed">Strategic thinking meets technical precision. Agile, collaborative, and insight-driven — from ideation to implementation, every step aligned with your goals.</p>
+      </div>
+      <!-- Values -->
+      <div class="card-premium reveal delay-4">
+        <div class="w-14 h-14 rounded-2xl bg-brand/10 flex items-center justify-center mb-5">
+          <i class="fas fa-gem text-brand text-2xl"></i>
+        </div>
+        <h3 class="font-display text-xl font-semibold text-navy mb-3">Values</h3>
+        <ul class="text-navy-soft text-sm space-y-1">
+          <li><i class="fas fa-check text-brand mr-2"></i>Integrity</li>
+          <li><i class="fas fa-check text-brand mr-2"></i>Innovation</li>
+          <li><i class="fas fa-check text-brand mr-2"></i>Accountability</li>
+          <li><i class="fas fa-check text-brand mr-2"></i>Sustainability</li>
+          <li><i class="fas fa-check text-brand mr-2"></i>Collaboration</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Philosophy dark block -->
+    <div class="philosophy-dark mt-16 reveal">
+      <div class="flex flex-col md:flex-row gap-10 items-center">
+        <div class="flex-1">
+          <h3 class="font-display text-3xl font-bold text-[#f3b3a1] mb-4">Core Values</h3>
+          <ul class="space-y-3 text-[#eae3db]">
+            <li><i class="fas fa-check text-brand mr-3"></i>Integrity – we do what's right</li>
+            <li><i class="fas fa-check text-brand mr-3"></i>Innovation – explore boldly, adapt quickly</li>
+            <li><i class="fas fa-check text-brand mr-3"></i>Accountability – every promise is a commitment</li>
+            <li><i class="fas fa-check text-brand mr-3"></i>Sustainability – designed for the long run</li>
+          </ul>
+        </div>
+         <div class="flex-1 w-full">
+          <img src="./image/corevalue.png" alt="Core Values" class="rounded-3xl w-full h-56 object-cover"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ SERVICES ═══════════════════════════════ -->
+<section class="py-24 bg-[#faf7f5]">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="text-center mb-16">
+      <div class="section-label reveal">What We Do</div>
+      <h2 class="font-display text-4xl md:text-5xl font-bold text-navy mt-3 reveal delay-1">
+        Services <span class="gradient-text">Tailored</span> for Impact
+      </h2>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Service cards -->
+      <div class="card-premium text-center reveal delay-1">
+        <i class="fas fa-cloud text-brand text-4xl mb-4"></i>
+        <h3 class="font-display text-lg font-semibold text-navy mb-2">Cloud</h3>
+        <p class="text-navy-soft text-sm">Migrating and managing your infrastructure on the cloud for efficiency.</p>
+      </div>
+      <div class="card-premium text-center reveal delay-2">
+        <i class="fas fa-laptop-code text-brand text-4xl mb-4"></i>
+        <h3 class="font-display text-lg font-semibold text-navy mb-2">Custom Software</h3>
+        <p class="text-navy-soft text-sm">Tailored software solutions to meet your unique business requirements.</p>
+      </div>
+      <div class="card-premium text-center reveal delay-3">
+        <i class="fas fa-shield-halved text-brand text-4xl mb-4"></i>
+        <h3 class="font-display text-lg font-semibold text-navy mb-2">Cyber Security</h3>
+        <p class="text-navy-soft text-sm">Protecting your business from cyber threats with advanced security measures.</p>
+      </div>
+      <div class="card-premium text-center reveal delay-4">
+        <i class="fas fa-chart-pie text-brand text-4xl mb-4"></i>
+        <h3 class="font-display text-lg font-semibold text-navy mb-2">IT Consulting</h3>
+        <p class="text-navy-soft text-sm">Expert guidance on technology strategies to optimize your business operations.</p>
+      </div>
+      <div class="card-premium text-center reveal delay-1">
+        <i class="fas fa-mobile-screen text-brand text-4xl mb-4"></i>
+        <h3 class="font-display text-lg font-semibold text-navy mb-2">Mobile Apps</h3>
+        <p class="text-navy-soft text-sm">Creating innovative mobile apps for iOS and Android platforms.</p>
+      </div>
+      <div class="card-premium text-center reveal delay-2">
+        <i class="fas fa-globe text-brand text-4xl mb-4"></i>
+        <h3 class="font-display text-lg font-semibold text-navy mb-2">Web Apps</h3>
+        <p class="text-navy-soft text-sm">Building robust and scalable web applications for optimal online presence.</p>
+      </div>
+      <div class="card-premium text-center reveal delay-3">
+        <i class="fas fa-heart-pulse text-brand text-4xl mb-4"></i>
+        <h3 class="font-display text-lg font-semibold text-navy mb-2">eHealthcare</h3>
+        <p class="text-navy-soft text-sm">EHR, telemedicine, and clinic management solutions.</p>
+      </div>
+      <div class="card-premium text-center reveal delay-4">
+        <i class="fas fa-headset text-brand text-4xl mb-4"></i>
+        <h3 class="font-display text-lg font-semibold text-navy mb-2">IT Company Services</h3>
+        <p class="text-navy-soft text-sm">24/7 monitoring, help desk support, and remote troubleshooting.</p>
+      </div>
+    </div>
+
+    <div class="text-center mt-12 reveal">
+      <a href="servicespage.html" class="btn-brand"><span>Discover All Services</span> <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ TESTIMONIALS ═══════════════════════════════ -->
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="text-center mb-16">
+      <div class="section-label reveal">Client Stories</div>
+      <h2 class="font-display text-4xl md:text-5xl font-bold text-navy mt-3 reveal delay-1">
+        What <span class="gradient-text">Clients</span> Say
+      </h2>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="testimonial-card reveal delay-1">
+        <i class="fas fa-quote-left text-brand text-2xl mb-4"></i>
+        <p class="text-navy-soft italic leading-relaxed">"EyeRexUs transformed our website, leading to a significant increase in online traffic."</p>
+        <div class="mt-5 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-brand/10 flex items-center justify-center text-brand font-bold">P</div>
+          <div><div class="font-semibold text-navy text-sm">Priya Sharma</div><div class="text-xs text-navy-soft">Customer</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal delay-2">
+        <i class="fas fa-quote-left text-brand text-2xl mb-4"></i>
+        <p class="text-navy-soft italic leading-relaxed">"Their custom software solution streamlined our operations and improved efficiency."</p>
+        <div class="mt-5 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-brand/10 flex items-center justify-center text-brand font-bold">R</div>
+          <div><div class="font-semibold text-navy text-sm">Rajesh Kumar</div><div class="text-xs text-navy-soft">Customer</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal delay-3">
+        <i class="fas fa-quote-left text-brand text-2xl mb-4"></i>
+        <p class="text-navy-soft italic leading-relaxed">"EyeRexUs provided excellent IT consulting services, helping us develop a clear technology roadmap."</p>
+        <div class="mt-5 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-brand/10 flex items-center justify-center text-brand font-bold">A</div>
+          <div><div class="font-semibold text-navy text-sm">Anita Singh</div><div class="text-xs text-navy-soft">Customer</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal delay-1">
+        <i class="fas fa-quote-left text-brand text-2xl mb-4"></i>
+        <p class="text-navy-soft italic leading-relaxed">"The cybersecurity solutions implemented by EyeRexUs have significantly enhanced our data protection."</p>
+        <div class="mt-5 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-brand/10 flex items-center justify-center text-brand font-bold">V</div>
+          <div><div class="font-semibold text-navy text-sm">Vikram Gupta</div><div class="text-xs text-navy-soft">Customer</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal delay-2">
+        <i class="fas fa-quote-left text-brand text-2xl mb-4"></i>
+        <p class="text-navy-soft italic leading-relaxed">"Their mobile app development team created a user-friendly and engaging app for our customers."</p>
+        <div class="mt-5 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-brand/10 flex items-center justify-center text-brand font-bold">D</div>
+          <div><div class="font-semibold text-navy text-sm">Deepika Verma</div><div class="text-xs text-navy-soft">Customer</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal delay-3">
+        <i class="fas fa-quote-left text-brand text-2xl mb-4"></i>
+        <p class="text-navy-soft italic leading-relaxed">"EyeRexUs' cloud migration services were seamless and improved our infrastructure's performance."</p>
+        <div class="mt-5 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-brand/10 flex items-center justify-center text-brand font-bold">A</div>
+          <div><div class="font-semibold text-navy text-sm">Amit Patel</div><div class="text-xs text-navy-soft">Customer</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ CONTACT ═══════════════════════════════ -->
+<section id="contact" class="py-24 bg-[#f2ebe6]">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="text-center mb-16">
+      <div class="section-label reveal">Get In Touch</div>
+      <h2 class="font-display text-4xl md:text-5xl font-bold text-navy mt-3 reveal delay-1">
+        Let's <span class="gradient-text">Connect</span>
+      </h2>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-10 items-start">
+      <!-- Info -->
+      <div class="space-y-4 reveal-left">
+        <div class="contact-info-card">
+          <i class="fas fa-phone-alt text-brand text-2xl mt-1"></i>
+          <div><div class="font-semibold text-navy">+91 9935663377</div><div class="text-sm text-navy-soft">Official · Call / WhatsApp</div></div>
+        </div>
+        <div class="contact-info-card">
+          <i class="fab fa-whatsapp text-brand text-2xl mt-1"></i>
+          <div>
+            <div class="font-semibold text-navy">WhatsApp</div>
+            <div class="text-sm text-navy-soft">
+              <a href="https://wa.me/917068607202" target="_blank" rel="noopener noreferrer" class="hover:text-brand transition-colors">+91 7068607202 (India)</a><br/>
+              <a href="https://wa.me/9779822574953" target="_blank" rel="noopener noreferrer" class="hover:text-brand transition-colors">+977 982-2574953 (Nepal)</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <i class="fas fa-envelope text-brand text-2xl mt-1"></i>
+          <div>
+            <a href="mailto:eyerexuspvtltd@gmail.com" class="font-semibold text-navy hover:text-brand transition-colors block">eyerexuspvtltd@gmail.com</a>
+            <a href="mailto:info@eyerexus.com" class="font-semibold text-navy hover:text-brand transition-colors block mt-1">info@eyerexus.com</a>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <i class="fas fa-location-dot text-brand text-2xl mt-1"></i>
+          <div><div class="font-semibold text-navy">96 Civil Lines, Sitapur</div><div class="text-sm text-navy-soft">Uttar Pradesh, India – 261001</div></div>
+        </div>
+        <div class="contact-info-card">
+          <i class="fas fa-clock text-brand text-2xl mt-1"></i>
+          <div><div class="font-semibold text-navy">Mon–Sat 9AM–6PM IST</div></div>
+        </div>
+      </div>
+      <!-- Form -->
+      <div class="bg-white rounded-[32px] p-8 shadow-xl reveal-right">
+        <h3 class="font-display text-2xl font-bold text-brand mb-6">Send a Message</h3>
+        <form id="contactForm" class="space-y-5">
+          <div>
+            <label class="block text-sm font-medium text-navy mb-1">Your Name</label>
+            <input type="text" name="name" placeholder="Enter your full name" required class="form-input"/>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-navy mb-1">Email Address</label>
+            <input type="email" name="email" placeholder="Enter your email" required class="form-input"/>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-navy mb-1">Message</label>
+            <textarea name="message" rows="4" placeholder="How can we help?" required class="form-input resize-y"></textarea>
+          </div>
+          <button type="submit" class="btn-brand w-full justify-center">
+            <span>Send Inquiry</span>
+            <div class="spinner"></div>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+<footer class="footer-main">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 pb-10">
+      <div>
+        <img src="image/eyeruxhome.jpeg" alt="EyeRexUs" class="w-16 h-16 rounded-full border-2 border-white/30 mb-4"/>
+        <p class="text-white/80 text-sm leading-relaxed">Government-registered MSME. Innovation with integrity. Your edge in tech.</p>
+        <div class="flex gap-4 mt-5 text-xl">
+          <a href="https://www.linkedin.com/in/eyerexus/" target="_blank" rel="noopener noreferrer" class="text-[#ffdab9] hover:text-white transition-colors"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/eyerexus_official_ac?utm_source=qr&igsh=NHI0bXk0bmZka2Vo" target="_blank" rel="noopener noreferrer" class="text-[#ffdab9] hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-display text-lg font-semibold text-white mb-4">Explore</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="servicespage.html">Services</a></li>
+          <li><a href="Subsidiaries.html">Subsidiaries</a></li>
+          <li><a href="indus.html">Industries</a></li>
+          <li><a href="carrer.html">Careers</a></li>
+          <li><a href="nfc-card.html">NFC Card</a></li>
+          
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display text-lg font-semibold text-white mb-4">Transparency</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display text-lg font-semibold text-white mb-4"><i class="fas fa-map-pin mr-2"></i>Address</h4>
+        <p class="text-white/80 text-sm leading-relaxed mb-3">96 Civil Lines, Sitapur<br/>Uttar Pradesh, India – 261001</p>
+        <p class="text-white/80 text-sm mb-2"><i class="fas fa-envelope mr-2 text-[#ffdab9]"></i><a href="mailto:eyerexuspvtltd@gmail.com" class="hover:underline">eyerexuspvtltd@gmail.com</a></p>
+        <p class="text-white/80 text-sm mb-2"><i class="fas fa-envelope mr-2 text-[#ffdab9]"></i><a href="mailto:info@eyerexus.com" class="hover:underline">info@eyerexus.com</a></p>
+        <p class="text-white/80 text-sm mb-2"><i class="fab fa-whatsapp mr-2 text-[#ffdab9]"></i><a href="https://wa.me/917068607202" target="_blank" class="hover:underline">+91 7068607202 (India)</a></p>
+        <p class="text-white/80 text-sm"><i class="fab fa-whatsapp mr-2 text-[#ffdab9]"></i><a href="https://wa.me/9779822574953" target="_blank" class="hover:underline">+977 982-2574953 (Nepal)</a></p>
+      </div>
+    </div>
+    <hr class="footer-divider"/>
+    <div class="text-center pt-6 text-white/60 text-sm">
+      © 2026 EyeRexUs (MSME) – independent. All rights reserved. <span class="text-[#ffdab9]">✦</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>

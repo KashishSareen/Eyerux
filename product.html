@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <meta name="theme-color" content="#b22234"/>
+  <title>EyeRexUs · Products</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { brand: { DEFAULT:'#b22234', dark:'#8b1a2a', light:'#ffe5e9' }, navy: { DEFAULT:'#0b1e3a', mid:'#1f2a3f', soft:'#3b4b62' } },
+        fontFamily: { display:['"Playfair Display"','serif'], body:['Inter','sans-serif'] }
+      }}
+    }
+  </script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="font-body bg-[#fcfaf8] text-navy-mid overflow-x-hidden">
+
+<!-- NAVBAR -->
+<nav id="navbar" class="w-full">
+  <div class="max-w-7xl mx-auto px-5 py-3 flex items-center justify-between">
+    <a href="index.html"><img src="image/eyeruxhome.jpeg" alt="EyeRexUs" class="logo-img"/></a>
+    <div class="hidden lg:flex items-center gap-6">
+      <a href="index.html"        class="nav-link">Home</a>
+      <a href="about.html"        class="nav-link">About</a>
+      <a href="product.html"      class="nav-link">Products</a>
+      <a href="servicespage.html" class="nav-link">Services</a>
+      <a href="Subsidiaries.html" class="nav-link">Subsidiaries</a>
+      <a href="indus.html"        class="nav-link">Industries</a>
+      <a href="carrer.html"       class="nav-link">Careers</a>
+      <a href="nfc-card.html"     class="nav-link">NFC Card</a>
+      <a href="contact.html"      class="nav-link">Contact</a>
+      <a href="terms.html"        class="nav-link">Terms</a>
+      <a href="https://healthcare.eyerexus.com/" class="nav-btn" target="_blank">Health Care</a>
+    </div>
+    <button id="menuBtn" class="lg:hidden text-white text-2xl p-2"><i id="menuIcon" class="fas fa-bars"></i></button>
+  </div>
+</nav>
+<div id="mobileMenu">
+  <a href="index.html"        class="mobile-link">Home</a>
+  <a href="about.html"        class="mobile-link">About</a>
+  <a href="product.html"      class="mobile-link">Products</a>
+  <a href="servicespage.html" class="mobile-link">Services</a>
+  <a href="Subsidiaries.html" class="mobile-link">Subsidiaries</a>
+  <a href="indus.html"        class="mobile-link">Industries</a>
+  <a href="carrer.html"       class="mobile-link">Careers</a>
+  <a href="nfc-card.html"     class="mobile-link">NFC Card</a>
+  <a href="contact.html"      class="mobile-link">Contact</a>
+  <a href="terms.html"        class="mobile-link">Terms</a>
+  <a href="https://healthcare.eyerexus.com/" class="mobile-link nav-btn text-center mt-2 !text-brand" target="_blank">Health Care</a>
+</div>
+<div id="menuOverlay"></div>
+
+<!-- PAGE HEADER -->
+<section class="hero-gradient-bg py-16">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="section-label reveal"><i class="fas fa-box-open mr-2"></i>Product Suite</div>
+    <h1 class="font-display text-4xl md:text-5xl font-bold text-navy mt-3 reveal delay-1">
+      <span class="gradient-text">PRODUCTS</span> – EyeRexUs
+    </h1>
+    <p class="mt-4 text-navy-soft text-lg max-w-2xl reveal delay-2">Engineered for measurable growth, operational efficiency, and sustainable competitive advantage.</p>
+  </div>
+</section>
+
+<!-- PRODUCT GRID -->
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+
+      <!-- eRupai -->
+      <div class="product-card-new reveal delay-1">
+        <div class="flex items-center justify-between mb-5">
+          <span class="pill-red text-xs font-bold"><i class="fas fa-circle mr-1 text-xs"></i> 01 · core</span>
+          <i class="fas fa-coins text-brand text-3xl opacity-75"></i>
+        </div>
+        <h2 class="font-display text-xl font-bold text-navy mb-1">EyeRexUs eRupai</h2>
+        <div class="text-sm text-navy-soft border-l-4 border-brand pl-3 mb-4">Digital Streaming &amp; Virtual Economy Platform</div>
+        <p class="text-sm text-navy-soft leading-relaxed mb-4">EyeRexUs eRupai enables businesses to operate a complete digital economy model under secure architecture.</p>
+        <ul class="space-y-2 text-sm text-navy-soft flex-1">
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand mt-0.5 text-xs"></i> Integrated Virtual Currency System</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand mt-0.5 text-xs"></i> Secure Wallet Management</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand mt-0.5 text-xs"></i> Multi-Level Admin Panel</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand mt-0.5 text-xs"></i> Real-Time Revenue Analytics</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand mt-0.5 text-xs"></i> Automated Financial Transparency</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand mt-0.5 text-xs"></i> Structured Digital Governance</li>
+        </ul>
+        <div class="mt-5 pt-4 border-t border-brand/15 text-brand font-semibold text-sm flex items-center gap-2 cursor-default">
+          <i class="fas fa-circle-right"></i> Launch with EyeRexUs eRupai
+        </div>
+      </div>
+
+      <!-- Healthcare -->
+      <div class="product-card-new reveal delay-2">
+        <div class="flex items-center justify-between mb-5">
+          <span class="pill-red text-xs font-bold"><i class="fas fa-heart mr-1 text-xs"></i> 02 · med</span>
+          <i class="fas fa-hospital text-brand text-3xl opacity-75"></i>
+        </div>
+        <h2 class="font-display text-xl font-bold text-navy mb-1">Healthcare Management</h2>
+        <div class="text-sm text-navy-soft border-l-4 border-brand pl-3 mb-4">Intelligent Clinic Automation</div>
+        <p class="text-sm text-navy-soft leading-relaxed mb-4">Secure and automation-driven digital healthcare platform for clinics, hospitals, and medical institutions.</p>
+        <ul class="space-y-2 text-sm text-navy-soft flex-1">
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand mt-0.5 text-xs"></i> E-Prescription &amp; Digital Patient Records</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand mt-0.5 text-xs"></i> Appointment &amp; Follow-Up Automation</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand mt-0.5 text-xs"></i> Lab &amp; Diagnostic Integration</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand mt-0.5 text-xs"></i> Smart Reminder &amp; Notification System</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand mt-0.5 text-xs"></i> Financial Reporting &amp; Analytics</li>
+        </ul>
+        <div class="mt-5 pt-4 border-t border-brand/15 text-brand font-semibold text-sm flex items-center gap-2 cursor-default">
+          <i class="fas fa-calendar-check"></i> Request Healthcare Demo
+        </div>
+      </div>
+
+      <!-- Custom API -->
+      <div class="product-card-new reveal delay-3">
+        <div class="flex items-center justify-between mb-5">
+          <span class="pill-red text-xs font-bold"><i class="fas fa-code mr-1 text-xs"></i> 03 · connect</span>
+          <i class="fas fa-plug text-brand text-3xl opacity-75"></i>
+        </div>
+        <h2 class="font-display text-xl font-bold text-navy mb-1">Custom API</h2>
+        <div class="text-sm text-navy-soft border-l-4 border-brand pl-3 mb-4">Enterprise API Development Solutions</div>
+        <p class="text-sm text-navy-soft leading-relaxed mb-4">EyeRexUs API Development ensures secure data exchange, real-time communication, and scalable infrastructure.</p>
+        <ul class="space-y-2 text-sm text-navy-soft flex-1">
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand mt-0.5 text-xs"></i> Calling API Development</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand mt-0.5 text-xs"></i> Live Streaming API Services</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand mt-0.5 text-xs"></i> Voice Translation API Integration</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand mt-0.5 text-xs"></i> GPS API Services</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand mt-0.5 text-xs"></i> Face Detection API</li>
+        </ul>
+        <div class="mt-5 pt-4 border-t border-brand/15 text-brand font-semibold text-sm flex items-center gap-2 cursor-default">
+          <i class="fas fa-comment-dots"></i> Talk to an API Specialist
+        </div>
+      </div>
+
+      <!-- AI Agent -->
+      <div class="product-card-new reveal delay-4">
+        <div class="flex items-center justify-between mb-5">
+          <span class="pill-red text-xs font-bold"><i class="fas fa-brain mr-1 text-xs"></i> 04 · future</span>
+          <i class="fas fa-robot text-brand text-3xl opacity-75"></i>
+        </div>
+        <h2 class="font-display text-xl font-bold text-navy mb-1">
+          AI Agent
+          <span class="inline-block bg-[#f0e5e2] text-[#7a2e2e] text-xs font-bold px-3 py-0.5 rounded-full border border-[#c07373] ml-2 align-middle">
+            <i class="fas fa-flask mr-1"></i>in dev
+          </span>
+        </h2>
+        <div class="text-sm text-navy-soft border-l-4 border-brand pl-3 mb-4">Intelligent Automation &amp; Predictive Intelligence</div>
+        <p class="text-sm text-navy-soft leading-relaxed mb-4">EyeRexUs is developing its own advanced AI Agent to power automation and decision-making across digital platforms.</p>
+        <ul class="space-y-2 text-sm text-navy-soft flex-1">
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand mt-0.5 text-xs"></i> Workflow Learning &amp; Behavioral Adaptation</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand mt-0.5 text-xs"></i> System Behavior Analysis</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand mt-0.5 text-xs"></i> Automation of Repetitive Tasks</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand mt-0.5 text-xs"></i> Risk &amp; Anomaly Monitoring</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand mt-0.5 text-xs"></i> AI-Driven Operational Insights</li>
+        </ul>
+        <div class="mt-5 pt-4 border-t border-brand/15 text-brand font-semibold text-sm flex items-center gap-2 cursor-default">
+          <i class="fas fa-chart-line"></i> Partner for AI Innovation
+        </div>
+      </div>
+    </div>
+
+    <!-- Why section -->
+    <div class="mt-16 bg-[#fffaf8] border border-brand/20 rounded-[48px] p-10 reveal">
+      <h3 class="font-display text-2xl font-bold text-navy flex items-center gap-3 mb-6">
+        <i class="fas fa-crown text-brand"></i> Why EyeRexUs Products Lead the Market
+      </h3>
+      <div class="flex flex-wrap gap-3 mb-8">
+        <span class="pill-red"><i class="fas fa-shield-halved"></i> Secure architecture first</span>
+        <span class="pill-red"><i class="fas fa-microchip"></i> AI-integrated systems</span>
+        <span class="pill-red"><i class="fas fa-chart-pie"></i> Financial transparency</span>
+        <span class="pill-red"><i class="fas fa-cloud"></i> Cloud-based scalable infra</span>
+        <span class="pill-red"><i class="fas fa-lock"></i> Enterprise-grade security</span>
+        <span class="pill-red"><i class="fas fa-gauge-high"></i> Automation-centric dev</span>
+        <span class="pill-red"><i class="fas fa-calendar-week"></i> Long-term growth strategy</span>
+      </div>
+      <div class="border-l-4 border-brand pl-6 bg-white/60 rounded-r-3xl py-4 pr-6 max-w-3xl">
+        <i class="fas fa-quote-right text-brand mr-3"></i>
+        <span class="text-navy-soft">Every EyeRexUs product is engineered to deliver measurable growth, operational efficiency, digital control, and sustainable competitive advantage.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-main">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 pb-10">
+      <div>
+        <img src="image/eyeruxhome.jpeg" alt="EyeRexUs" class="w-16 h-16 rounded-full border-2 border-white/30 mb-4"/>
+        <p class="text-white/80 text-sm leading-relaxed">Government-registered MSME. Innovation with integrity. Your edge in tech.</p>
+        <div class="flex gap-4 mt-5 text-xl">
+          <a href="https://www.linkedin.com/in/eyerexus/" target="_blank" rel="noopener noreferrer" class="text-[#ffdab9] hover:text-white transition-colors"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/eyerexus_official_ac?utm_source=qr&igsh=NHI0bXk0bmZka2Vo" target="_blank" rel="noopener noreferrer" class="text-[#ffdab9] hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-display text-lg font-semibold text-white mb-4">Explore</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+          <li><a href="product.html">Products</a></li><li><a href="servicespage.html">Services</a></li>
+          <li><a href="Subsidiaries.html">Subsidiaries</a></li><li><a href="indus.html">Industries</a></li>
+          <li><a href="carrer.html">Careers</a></li><li><a href="nfc-card.html">NFC Card</a></li><li><a href="contact.html">Contact</a></li><li><a href="terms.html">Terms</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display text-lg font-semibold text-white mb-4">Transparency</h4>
+        <ul class="space-y-2 text-sm"><li><a href="#">Privacy Policy</a></li><li><a href="terms.html">Terms &amp; Conditions</a></li></ul>
+      </div>
+      <div>
+        <h4 class="font-display text-lg font-semibold text-white mb-4"><i class="fas fa-map-pin mr-2"></i>Address</h4>
+        <p class="text-white/80 text-sm leading-relaxed mb-3">96 Civil Lines, Sitapur<br/>Uttar Pradesh, India – 261001</p>
+        <p class="text-white/80 text-sm mb-2"><i class="fas fa-envelope mr-2 text-[#ffdab9]"></i><a href="mailto:eyerexuspvtltd@gmail.com" class="hover:underline">eyerexuspvtltd@gmail.com</a></p>
+        <p class="text-white/80 text-sm mb-2"><i class="fas fa-envelope mr-2 text-[#ffdab9]"></i><a href="mailto:info@eyerexus.com" class="hover:underline">info@eyerexus.com</a></p>
+        <p class="text-white/80 text-sm mb-2"><i class="fab fa-whatsapp mr-2 text-[#ffdab9]"></i><a href="https://wa.me/917068607202" target="_blank" class="hover:underline">+91 7068607202 (India)</a></p>
+        <p class="text-white/80 text-sm"><i class="fab fa-whatsapp mr-2 text-[#ffdab9]"></i><a href="https://wa.me/9779822574953" target="_blank" class="hover:underline">+977 982-2574953 (Nepal)</a></p>
+      </div>
+    </div>
+    <hr class="footer-divider"/>
+    <div class="text-center pt-6 text-white/60 text-sm">© 2026 EyeRexUs (MSME) – independent. All rights reserved. <span class="text-[#ffdab9]">✦</span></div>
+  </div>
+</footer>
+<button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+<script src="script.js"></script>
+</body>
+</html>

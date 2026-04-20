@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <meta name="theme-color" content="#b22234"/>
+  <title>EyeRexUs · Industries</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { brand: { DEFAULT:'#b22234', dark:'#8b1a2a', light:'#ffe5e9' }, navy: { DEFAULT:'#0b1e3a', mid:'#1f2a3f', soft:'#3b4b62' } },
+        fontFamily: { display:['"Playfair Display"','serif'], body:['Inter','sans-serif'] }
+      }}
+    }
+  </script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="font-body bg-[#fcfaf8] text-navy-mid overflow-x-hidden">
+
+<!-- NAVBAR -->
+<nav id="navbar" class="w-full">
+  <div class="max-w-7xl mx-auto px-5 py-3 flex items-center justify-between">
+    <a href="index.html"><img src="image/eyeruxhome.jpeg" alt="EyeRexUs" class="logo-img"/></a>
+    <div class="hidden lg:flex items-center gap-6">
+      <a href="index.html"        class="nav-link">Home</a>
+      <a href="about.html"        class="nav-link">About</a>
+      <a href="product.html"      class="nav-link">Products</a>
+      <a href="servicespage.html" class="nav-link">Services</a>
+      <a href="Subsidiaries.html" class="nav-link">Subsidiaries</a>
+      <a href="indus.html"        class="nav-link">Industries</a>
+      <a href="carrer.html"       class="nav-link">Careers</a>
+      <a href="nfc-card.html"     class="nav-link">NFC Card</a>
+      <a href="contact.html"      class="nav-link">Contact</a>
+      <a href="terms.html"        class="nav-link">Terms</a>
+      <a href="https://healthcare.eyerexus.com/" class="nav-btn" target="_blank">Health Care</a>
+    </div>
+    <button id="menuBtn" class="lg:hidden text-white text-2xl p-2"><i id="menuIcon" class="fas fa-bars"></i></button>
+  </div>
+</nav>
+<div id="mobileMenu">
+  <a href="index.html"        class="mobile-link">Home</a>
+  <a href="about.html"        class="mobile-link">About</a>
+  <a href="product.html"      class="mobile-link">Products</a>
+  <a href="servicespage.html" class="mobile-link">Services</a>
+  <a href="Subsidiaries.html" class="mobile-link">Subsidiaries</a>
+  <a href="indus.html"        class="mobile-link">Industries</a>
+  <a href="carrer.html"       class="mobile-link">Careers</a>
+  <a href="nfc-card.html"     class="mobile-link">NFC Card</a>
+  <a href="contact.html"      class="mobile-link">Contact</a>
+  <a href="terms.html"        class="mobile-link">Terms</a>
+  <a href="https://healthcare.eyerexus.com/" class="mobile-link nav-btn text-center mt-2 !text-brand" target="_blank">Health Care</a>
+</div>
+<div id="menuOverlay"></div>
+
+<!-- HEADER -->
+<section class="hero-gradient-bg py-16">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="section-label reveal"><i class="fas fa-bolt mr-2"></i>INDUSTRIES – EYEREXUS</div>
+    <h1 class="font-display text-4xl md:text-5xl font-bold text-navy mt-3 reveal delay-1">
+      Powering Every Sector with <span class="gradient-text">Secure Digital Ecosystems</span>
+    </h1>
+    <p class="mt-4 text-navy-soft text-lg max-w-3xl reveal delay-2">
+      EyeRexUs delivers secure, scalable, and AI-integrated digital solutions across multiple industries worldwide — combining technology, automation, cyber security, cloud infrastructure, and intelligent analytics.
+    </p>
+  </div>
+</section>
+
+<!-- INDUSTRY CARDS -->
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+
+      <div class="industry-card reveal delay-1">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 rounded-xl bg-brand/10 flex items-center justify-center"><i class="fas fa-coins text-brand text-xl"></i></div>
+          <h2 class="font-display text-lg font-bold text-navy">Fintech &amp; Digital Payments</h2>
+        </div>
+        <p class="text-sm text-navy-soft mb-4">Advanced fintech infrastructure, digital wallets, streaming economy &amp; secure transactions.</p>
+        <ul class="space-y-1.5 text-sm text-navy-soft flex-1">
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Secure Digital Payments</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Virtual Currency</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Real-Time Monitoring</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Fraud &amp; Risk Management</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Regulatory-Ready</li>
+        </ul>
+        <a href="contact.html" class="mt-4 text-brand font-semibold text-sm flex items-center gap-2 hover:gap-3 transition-all">Build Secure Fintech <i class="fas fa-arrow-right text-xs"></i></a>
+      </div>
+
+      <div class="industry-card reveal delay-2">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 rounded-xl bg-brand/10 flex items-center justify-center"><i class="fas fa-hospital text-brand text-xl"></i></div>
+          <h2 class="font-display text-lg font-bold text-navy">Healthcare &amp; Medical</h2>
+        </div>
+        <p class="text-sm text-navy-soft mb-4">Clinics, hospitals &amp; diagnostic centers — secure automation &amp; data protection.</p>
+        <ul class="space-y-1.5 text-sm text-navy-soft flex-1">
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Digital Patient Records</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> E-Prescription</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Appointment Automation</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Secure Encryption</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Compliance-Ready</li>
+        </ul>
+        <a href="contact.html" class="mt-4 text-brand font-semibold text-sm flex items-center gap-2 hover:gap-3 transition-all">Digitize Healthcare <i class="fas fa-arrow-right text-xs"></i></a>
+      </div>
+
+      <div class="industry-card reveal delay-3">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 rounded-xl bg-brand/10 flex items-center justify-center"><i class="fas fa-play-circle text-brand text-xl"></i></div>
+          <h2 class="font-display text-lg font-bold text-navy">Streaming &amp; Entertainment</h2>
+        </div>
+        <p class="text-sm text-navy-soft mb-4">Virtual economy, high-traffic infrastructure &amp; secure monetization.</p>
+        <ul class="space-y-1.5 text-sm text-navy-soft flex-1">
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Virtual Economy</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> High-Traffic Infrastructure</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Monetization Systems</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Revenue Analytics</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Fraud Monitoring</li>
+        </ul>
+        <a href="contact.html" class="mt-4 text-brand font-semibold text-sm flex items-center gap-2 hover:gap-3 transition-all">Scale Your Platform <i class="fas fa-arrow-right text-xs"></i></a>
+      </div>
+
+      <div class="industry-card reveal delay-4">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 rounded-xl bg-brand/10 flex items-center justify-center"><i class="fas fa-building text-brand text-xl"></i></div>
+          <h2 class="font-display text-lg font-bold text-navy">Enterprise &amp; Corporate</h2>
+        </div>
+        <p class="text-sm text-navy-soft mb-4">Custom ERP/CRM, API integration, cyber security, cloud &amp; DevOps.</p>
+        <ul class="space-y-1.5 text-sm text-navy-soft flex-1">
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Custom ERP/CRM</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Secure API Architecture</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Cloud &amp; DevOps</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> AI Intelligence</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Automation Workflows</li>
+        </ul>
+        <a href="contact.html" class="mt-4 text-brand font-semibold text-sm flex items-center gap-2 hover:gap-3 transition-all">Transform Enterprise Ops <i class="fas fa-arrow-right text-xs"></i></a>
+      </div>
+
+      <div class="industry-card reveal delay-1">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 rounded-xl bg-brand/10 flex items-center justify-center"><i class="fas fa-graduation-cap text-brand text-xl"></i></div>
+          <h2 class="font-display text-lg font-bold text-navy">Education &amp; E-Learning</h2>
+        </div>
+        <p class="text-sm text-navy-soft mb-4">Secure &amp; scalable LMS, student management, digital exams.</p>
+        <ul class="space-y-1.5 text-sm text-navy-soft flex-1">
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Online Learning Platforms</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Student Management</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Digital Examination</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Secure Data</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Real-Time Analytics</li>
+        </ul>
+        <a href="contact.html" class="mt-4 text-brand font-semibold text-sm flex items-center gap-2 hover:gap-3 transition-all">Modernize Education <i class="fas fa-arrow-right text-xs"></i></a>
+      </div>
+
+      <div class="industry-card reveal delay-2">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 rounded-xl bg-brand/10 flex items-center justify-center"><i class="fas fa-landmark text-brand text-xl"></i></div>
+          <h2 class="font-display text-lg font-bold text-navy">Government &amp; Institutional</h2>
+        </div>
+        <p class="text-sm text-navy-soft mb-4">Compliance-ready infrastructure, cyber frameworks &amp; enterprise APIs.</p>
+        <ul class="space-y-1.5 text-sm text-navy-soft flex-1">
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Cyber Security Frameworks</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Compliance-Ready</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Enterprise API</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Scalable Cloud</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Secure Data Infrastructure</li>
+        </ul>
+        <a href="contact.html" class="mt-4 text-brand font-semibold text-sm flex items-center gap-2 hover:gap-3 transition-all">Partner for Government <i class="fas fa-arrow-right text-xs"></i></a>
+      </div>
+
+      <div class="industry-card reveal delay-3">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 rounded-xl bg-brand/10 flex items-center justify-center"><i class="fas fa-rocket text-brand text-xl"></i></div>
+          <h2 class="font-display text-lg font-bold text-navy">Startups &amp; High-Growth</h2>
+        </div>
+        <p class="text-sm text-navy-soft mb-4">Scalable web/mobile dev, AI automation &amp; growth marketing.</p>
+        <ul class="space-y-1.5 text-sm text-navy-soft flex-1">
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Cost-Effective Infrastructure</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Secure Cloud</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Rapid Development</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> AI Automation</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Growth Marketing</li>
+        </ul>
+        <a href="contact.html" class="mt-4 text-brand font-semibold text-sm flex items-center gap-2 hover:gap-3 transition-all">Launch &amp; Scale <i class="fas fa-arrow-right text-xs"></i></a>
+      </div>
+
+      <div class="industry-card reveal delay-4">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 rounded-xl bg-brand/10 flex items-center justify-center"><i class="fas fa-store text-brand text-xl"></i></div>
+          <h2 class="font-display text-lg font-bold text-navy">Retail, E-Commerce &amp; Real Estate</h2>
+        </div>
+        <p class="text-sm text-navy-soft mb-4">Secure e-commerce, payment integration, CRM, GPS &amp; high-conversion.</p>
+        <ul class="space-y-1.5 text-sm text-navy-soft flex-1">
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Secure E-Commerce</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Payment Gateway</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> CRM &amp; Lead Management</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> GPS/Location APIs</li>
+          <li class="flex gap-2"><i class="fas fa-circle-check text-brand text-xs mt-0.5"></i> Digital Marketing</li>
+        </ul>
+        <a href="contact.html" class="mt-4 text-brand font-semibold text-sm flex items-center gap-2 hover:gap-3 transition-all">Build High-Conversion <i class="fas fa-arrow-right text-xs"></i></a>
+      </div>
+    </div>
+
+    <!-- Why Choose -->
+    <div class="mt-16 bg-navy rounded-[48px] p-10 reveal">
+      <h3 class="font-display text-2xl font-bold text-[#f3b3a1] flex items-center gap-3 mb-6">
+        <i class="fas fa-crown text-brand"></i> Why Industries Choose EyeRexUs
+      </h3>
+      <div class="flex flex-wrap gap-3 mb-6">
+        <span class="bg-white/10 text-white border border-white/20 px-4 py-2 rounded-full text-sm flex items-center gap-2"><i class="fas fa-shield-heart text-brand"></i> Secure Architecture First</span>
+        <span class="bg-white/10 text-white border border-white/20 px-4 py-2 rounded-full text-sm flex items-center gap-2"><i class="fas fa-brain text-brand"></i> AI-Integrated Systems</span>
+        <span class="bg-white/10 text-white border border-white/20 px-4 py-2 rounded-full text-sm flex items-center gap-2"><i class="fas fa-chart-line text-brand"></i> Real-Time Analytics</span>
+        <span class="bg-white/10 text-white border border-white/20 px-4 py-2 rounded-full text-sm flex items-center gap-2"><i class="fas fa-cloud text-brand"></i> Scalable Cloud Infrastructure</span>
+        <span class="bg-white/10 text-white border border-white/20 px-4 py-2 rounded-full text-sm flex items-center gap-2"><i class="fas fa-lock text-brand"></i> Enterprise-Level Cyber Security</span>
+        <span class="bg-white/10 text-white border border-white/20 px-4 py-2 rounded-full text-sm flex items-center gap-2"><i class="fas fa-rotate text-brand"></i> Automation-Centric</span>
+        <span class="bg-white/10 text-white border border-white/20 px-4 py-2 rounded-full text-sm flex items-center gap-2"><i class="fas fa-sitemap text-brand"></i> Structured Digital Governance</span>
+      </div>
+      <p class="text-white/80">EyeRexUs ensures every solution is secure, scalable, intelligent, and revenue-driven.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-main">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 pb-10">
+      <div>
+        <img src="image/eyeruxhome.jpeg" alt="EyeRexUs" class="w-16 h-16 rounded-full border-2 border-white/30 mb-4"/>
+        <p class="text-white/80 text-sm leading-relaxed">Government-registered MSME. Innovation with integrity. Your edge in tech.</p>
+        <div class="flex gap-4 mt-5 text-xl">
+          <a href="https://www.linkedin.com/in/eyerexus/" target="_blank" rel="noopener noreferrer" class="text-[#ffdab9] hover:text-white transition-colors"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/eyerexus_official_ac?utm_source=qr&igsh=NHI0bXk0bmZka2Vo" target="_blank" rel="noopener noreferrer" class="text-[#ffdab9] hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-display text-lg font-semibold text-white mb-4">Explore</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+          <li><a href="product.html">Products</a></li><li><a href="servicespage.html">Services</a></li>
+          <li><a href="Subsidiaries.html">Subsidiaries</a></li><li><a href="indus.html">Industries</a></li>
+          <li><a href="carrer.html">Careers</a></li><li><a href="nfc-card.html">NFC Card</a></li><li><a href="contact.html">Contact</a></li><li><a href="terms.html">Terms</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display text-lg font-semibold text-white mb-4">Transparency</h4>
+        <ul class="space-y-2 text-sm"><li><a href="#">Privacy Policy</a></li><li><a href="terms.html">Terms &amp; Conditions</a></li></ul>
+      </div>
+      <div>
+        <h4 class="font-display text-lg font-semibold text-white mb-4"><i class="fas fa-map-pin mr-2"></i>Address</h4>
+        <p class="text-white/80 text-sm leading-relaxed mb-3">96 Civil Lines, Sitapur<br/>Uttar Pradesh, India – 261001</p>
+        <p class="text-white/80 text-sm mb-2"><i class="fas fa-envelope mr-2 text-[#ffdab9]"></i><a href="mailto:eyerexuspvtltd@gmail.com" class="hover:underline">eyerexuspvtltd@gmail.com</a></p>
+        <p class="text-white/80 text-sm mb-2"><i class="fas fa-envelope mr-2 text-[#ffdab9]"></i><a href="mailto:info@eyerexus.com" class="hover:underline">info@eyerexus.com</a></p>
+        <p class="text-white/80 text-sm mb-2"><i class="fab fa-whatsapp mr-2 text-[#ffdab9]"></i><a href="https://wa.me/917068607202" target="_blank" class="hover:underline">+91 7068607202 (India)</a></p>
+        <p class="text-white/80 text-sm"><i class="fab fa-whatsapp mr-2 text-[#ffdab9]"></i><a href="https://wa.me/9779822574953" target="_blank" class="hover:underline">+977 982-2574953 (Nepal)</a></p>
+      </div>
+    </div>
+    <hr class="footer-divider"/>
+    <div class="text-center pt-6 text-white/60 text-sm">© 2026 EyeRexUs (MSME) – independent. All rights reserved. <span class="text-[#ffdab9]">✦</span></div>
+  </div>
+</footer>
+<button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+<script src="script.js"></script>
+</body>
+</html>
