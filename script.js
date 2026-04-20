@@ -162,4 +162,85 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ── 8. PAGE ENTER ANIMATION ── */
   document.body.classList.add('page-enter');
 
+  /* ── 9. INTERNSHIP APPLICATION MODAL ── */
+  const internshipModal = document.getElementById('internshipModal');
+  const openInternshipBtn = document.getElementById('openInternshipForm');
+  const closeInternshipBtn = document.getElementById('closeInternshipModal');
+  const cancelInternshipBtn = document.getElementById('cancelInternshipForm');
+  const internshipForm = document.getElementById('internshipForm');
+  const resumeUpload = document.getElementById('resumeUpload');
+  const fileName = document.getElementById('fileName');
+
+  function openInternshipModal() {
+    if (internshipModal) {
+      internshipModal.classList.remove('hidden');
+      internshipModal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeInternshipModalFunc() {
+    if (internshipModal) {
+      internshipModal.classList.add('hidden');
+      internshipModal.classList.remove('flex');
+      document.body.style.overflow = '';
+      if (internshipForm) internshipForm.reset();
+      if (fileName) fileName.classList.add('hidden');
+    }
+  }
+
+  openInternshipBtn && openInternshipBtn.addEventListener('click', openInternshipModal);
+  closeInternshipBtn && closeInternshipBtn.addEventListener('click', closeInternshipModalFunc);
+  cancelInternshipBtn && cancelInternshipBtn.addEventListener('click', closeInternshipModalFunc);
+
+  // Close modal on overlay click
+  internshipModal && internshipModal.addEventListener('click', (e) => {
+    if (e.target === internshipModal) closeInternshipModalFunc();
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && internshipModal && !internshipModal.classList.contains('hidden')) {
+      closeInternshipModalFunc();
+    }
+  });
+
+  // Show selected file name
+  resumeUpload && resumeUpload.addEventListener('change', (e) => {
+    if (e.target.files.length > 0) {
+      const file = e.target.files[0];
+      if (fileName) {
+        fileName.textContent = `Selected: ${file.name}`;
+        fileName.classList.remove('hidden');
+      }
+    }
+  });
+
+  // Handle form submission
+  if (internshipForm) {
+    internshipForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const btn = internshipForm.querySelector('button[type="submit"]');
+      const spinner = internshipForm.querySelector('.spinner');
+      
+      if (btn) btn.disabled = true;
+      if (spinner) spinner.style.display = 'block';
+
+      // Simulate form submission (replace with actual API call)
+      setTimeout(() => {
+        if (btn) {
+          btn.disabled = false;
+          const originalContent = btn.innerHTML;
+          btn.innerHTML = '<span>✓ Application Submitted!</span>';
+        }
+        if (spinner) spinner.style.display = 'none';
+        
+        setTimeout(() => {
+          closeInternshipModalFunc();
+          alert('Thank you for applying! We will review your application and get back to you soon.');
+        }, 1500);
+      }, 2000);
+    });
+  }
+
 });
